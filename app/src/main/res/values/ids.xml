@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="RegistrationProgressBar" type="id" />
+    <item name="LoginProgressBar" type="id" />
+    <item name="CourseProgressBar" type="id" />
+</resources>
