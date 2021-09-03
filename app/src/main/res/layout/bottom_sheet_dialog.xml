@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black_shade_1"
+    android:id="@+id/bottomSheet">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Course Name"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:id="@+id/bottomCourseName"
+        android:textSize="15sp"
+        android:layout_margin="4dp"
+        android:padding="4dp"
+        />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/bottomCourseName"
+        android:layout_margin="4dp"
+        android:padding="4dp"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/bottomImage"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:textStyle="normal"
+        android:id="@+id/bottomDescription"
+        android:layout_below="@id/bottomCourseName"
+        android:textColor="@color/white"
+        android:padding="4dp"
+        android:layout_margin="4dp"
+
+        android:textSize="15sp"
+        android:layout_toRightOf="@+id/bottomImage"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Suited For"
+        android:textStyle="normal"
+        android:id="@+id/bottomSuited"
+        android:layout_below="@id/bottomDescription"
+        android:textColor="@color/white"
+        android:padding="4dp"
+        android:layout_margin="4dp"
+
+        android:textSize="15sp"
+        android:layout_toRightOf="@+id/bottomImage"/>
+
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Price"
+    android:textStyle="bold"
+    android:id="@+id/bottomPrice"
+    android:layout_below="@id/bottomSuited"
+    android:textColor="@color/white"
+    android:padding="4dp"
+    android:layout_margin="4dp"
+
+    android:textSize="18sp"
+    android:layout_toRightOf="@+id/bottomImage"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bottomImage"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:text="Edit Course"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:id="@+id/bottomEditButton"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:text="View Details"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:id="@+id/bottomViewDetails"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

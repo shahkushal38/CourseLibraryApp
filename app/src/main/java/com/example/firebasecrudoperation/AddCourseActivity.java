@@ -50,6 +50,7 @@ public class AddCourseActivity extends AppCompatActivity {
         AddCourseButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                CourseProgressBar.setVisibility(View.VISIBLE);
                 String Course= CourseName.getText().toString();
                 String price=EditCoursePrice.getText().toString();
                 String suited=EditCourseSuited.getText().toString();
@@ -62,6 +63,7 @@ public class AddCourseActivity extends AppCompatActivity {
                 databaseReference.addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        CourseProgressBar.setVisibility(View.GONE);
                         databaseReference.child(courseID).setValue(courseRVModal);
                         Toast.makeText(AddCourseActivity.this, "Course Added Successfully", Toast.LENGTH_SHORT).show();
                         startActivity(new Intent(AddCourseActivity.this, MainActivity.class));
@@ -71,6 +73,7 @@ public class AddCourseActivity extends AppCompatActivity {
 
                     @Override
                     public void onCancelled(@NonNull DatabaseError error) {
+                        CourseProgressBar.setVisibility(View.GONE);
                         Toast.makeText(AddCourseActivity.this, "Error is :"+ error.toString(), Toast.LENGTH_SHORT).show();
 
                     }

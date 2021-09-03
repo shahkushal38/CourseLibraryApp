@@ -147,7 +147,8 @@
                     android:layout_height="200dp"
                     android:id="@+id/EditCourseDescription"
                     android:importantForAutofill="no"
-                    android:inputType="text"
+                    android:inputType="textMultiLine|textImeMultiLine"
+                    android:singleLine="false"
                     android:textColorHint="@color/white"
                     android:textColor="@color/white"
                     android:textSize="14sp"/>
