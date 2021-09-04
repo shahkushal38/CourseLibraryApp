@@ -44,7 +44,7 @@ public class CourseRVAdapter extends RecyclerView.Adapter<CourseRVAdapter.ViewHo
     public void onBindViewHolder(@NonNull CourseRVAdapter.ViewHolder holder, int position) {
         CourseRVModal courseRVModal=courseRVModalArrayList.get(position);
         holder.CourseName.setText(courseRVModal.getCourse());
-        holder.CoursePrice.setText(courseRVModal.getPrice());
+        holder.CoursePrice.setText("Rs "+courseRVModal.getPrice());
         Picasso.get().load(courseRVModal.getImage()).into(holder.CourseImage);
         setAnimation(holder.itemView,position);
 

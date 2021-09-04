@@ -145,7 +145,7 @@ public class MainActivity extends AppCompatActivity implements  CourseRVAdapter.
         bottomCourseName.setText(courseRVModal.getCourse());
         bottomDescription.setText(courseRVModal.getCourseDescription());
         bottomSuited.setText(courseRVModal.getSuited());
-        bottomPrice.setText(courseRVModal.getPrice());
+        bottomPrice.setText("Rs "+courseRVModal.getPrice());
 
         Picasso.get().load(courseRVModal.getImage()).into(bottomImage);
 
