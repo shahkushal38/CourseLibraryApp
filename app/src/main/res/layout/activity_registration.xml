@@ -118,4 +118,19 @@
         android:indeterminate="true"
         android:indeterminateDrawable="@drawable/progress_back"
         android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please Note : \nIn Username : Enter your Original Email ID\n In Password: Enter your Original Email Id's password to register"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textAllCaps="false"
+        android:textAlignment="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:padding="5dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_horizontal" />
 </RelativeLayout>

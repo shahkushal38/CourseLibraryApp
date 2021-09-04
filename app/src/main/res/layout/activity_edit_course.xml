@@ -114,7 +114,7 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="20dp"
-                android:hint="Enter Course Price "
+                android:hint="Enter Course Link "
                 style="@style/TextInputLayout"
                 android:padding="5dp"
                 android:textColorHint="@color/white"

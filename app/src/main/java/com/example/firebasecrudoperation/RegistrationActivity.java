@@ -22,7 +22,7 @@ public class RegistrationActivity extends AppCompatActivity {
     private TextInputEditText EditRegistrationUsername, EditRegistrationPassword, EditRegistrationConfirmPassword;
     private Button Registrationbutton;
     private ProgressBar RegistrationProgressBar;
-    private TextView RegistrationLoginText;
+    private TextView RegistrationLoginText, textView;
     private FirebaseAuth mAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +34,7 @@ public class RegistrationActivity extends AppCompatActivity {
         Registrationbutton=findViewById(R.id.Registrationbutton);
         RegistrationLoginText=findViewById(R.id.RegistrationLoginText);
         RegistrationProgressBar=findViewById(R.id.RegistrationProgressBar);
+        textView=findViewById(R.id.textView);
         mAuth=FirebaseAuth.getInstance();
 
         RegistrationLoginText.setOnClickListener(new View.OnClickListener() {
