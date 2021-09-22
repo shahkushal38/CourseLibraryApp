@@ -21,3 +21,5 @@ The UI of Registration Activity looks like this -
 
 <img src="https://user-images.githubusercontent.com/60709835/132094299-a8d849fc-849d-4d40-b5b5-490e3085cb77.jpeg" widht="350" height="600"/>
 
+**Step 4** - On successfull Registration and Login you are ready to use the mobile application and will be redirected to Home Page. 
+
